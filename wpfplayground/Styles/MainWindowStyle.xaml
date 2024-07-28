@@ -1,0 +1,24 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <!-- Color Palette -->
+    <SolidColorBrush x:Key="ChatColorBackground" Color="#F8EDED" />
+    <SolidColorBrush x:Key="ChatColorChatMenu" Color="#508C9B" />
+    <SolidColorBrush x:Key="ChatColorAccountMenu" Color="#134B70" />
+    <!-- Chat Window Background -->
+    <Style x:Key="ChatWindowBackgroundStyle" TargetType="Border">
+        <Setter Property="CornerRadius" Value="0 20 20 0"/>
+        <Setter Property="Background" Value="{StaticResource ChatColorBackground}" />
+        <Setter Property="Margin" Value="-25 0 0 0" />
+    </Style>
+    <!-- Chat Window Account Menu -->
+    <Style x:Key="ChatWindowAccountMenuStyle" TargetType="Border">
+        <Setter Property="CornerRadius" Value="20"/>
+        <Setter Property="Background" Value="{StaticResource ChatColorAccountMenu}" />
+    </Style>
+    <!-- Chat Window Chat Menu -->
+    <Style x:Key="ChatWindowChatMenuStyle" TargetType="Border">
+        <Setter Property="CornerRadius" Value="0 20 20 0"/>
+        <Setter Property="Background" Value="{StaticResource ChatColorChatMenu}" />
+        <Setter Property="Margin" Value="-25 0 0 0" />
+    </Style>
+</ResourceDictionary>

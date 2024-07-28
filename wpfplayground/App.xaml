@@ -1,0 +1,17 @@
+﻿<Application x:Class="wpfplayground.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:wpfplayground"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <!-- Link ControlStyles -->
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Styles/MainWindowStyle.xaml"/>
+                <ResourceDictionary Source="Styles/MainWindowControlStyle.xaml"/>
+                <ResourceDictionary Source="Styles/AccountMenuControlStyle.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
